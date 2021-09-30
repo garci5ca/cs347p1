@@ -14,6 +14,11 @@ h1 {
 
 }
 
+#logo {
+    width: 2em;
+    height: 2em;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -50,7 +55,7 @@ body {
 }
 
 h2 {
-    margin-left: 1em;
+    margin-left: 12px;
     font-family: sans-serif;
 }
 
@@ -62,4 +67,114 @@ h2 {
 p {
     margin-left: 1em;
     width: 30em;
+}
+
+.textbox {
+    background-color: rgb(46, 0, 0);
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 550px;
+    top: 100px;
+}
+
+.textbox > a {
+    text-decoration: none;
+    color: rgb(199, 0, 0)
+}
+
+.container {
+    position: relative;
+}
+
+.shop-container {
+    margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-title {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+#dark-choco {
+    width: 250px;
+    height: 250px;
+}
+
+#white-choco {
+    width: 250px;
+    height: 250px;
+}
+
+#milk-choco {
+    width: 250px;
+    height: 250px;
+}
+
+#map {
+    padding-left: 1em;
+    width: 300px;
+    height: 300px;
+}
+
+button {
+    width: 250px;
+    margin-top: 1em;
+}
+
+#review {
+    height: 100px;
+}
+
+#box-form {
+    margin-left: 1em;
+}
+
+#sub-button > button {
+    margin-left: 1.2em;
+    width: 100px;
+}
+
+.emoji::after {
+    content: "😀";
+    font-size: 100px;
+    width: 100px;
+    height: 100px;
+    animation-name: thoughts;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes thoughts {
+    20% {
+        content: '😕';
+    }
+    40% {
+        content: '😡';
+    }
+    60% {
+        content: '😳';
+    }
+    80% {
+        content: '😍';
+    }
+}
+
+@media (max-width: 670px){
+    .textbox {
+        display: flex;
+        position: static;
+        margin-left: 15px;
+        width: 475px;
+        align-items: center;
+        font-size: 60px;
+    }
 }

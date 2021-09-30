@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang ="en">
     <head>
+        <meta charset="UTF-8">
         <title>Chocolate</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="img/png" href="images/Turner.png">
     </head>
+    <body>
     <header>
-        <h1><a id="heading" title="Home" href="index.html">Turners' Chocolate</a></h1>
+        <h1><img id="logo" src="images/Turner.png" alt="turner-logo"><a id="heading" title="Home" href="index.html">Turners' Chocolate</a></h1>
     </header>
     <nav>
         <ul>
@@ -17,7 +20,13 @@
             <li title="Report" class="navlink"><a href="report.html">Report</a></li>
         </ul>
     </nav>
-    <body>
-        
+        <h2>Leave a comment!</h2>
+        <span class="emoji" role="img" aria-label="faces"></span>
+        <p>Want to share how our service was? Leave a comment below!</p>
+        <div id="box-form">
+        <div><label for="review">How did we do?</label></div>
+        <div><textarea id="review"></textarea></div>
+        </div>
+        <div id="sub-button"><button>Submit</button></div>
     </body>
 </html>
