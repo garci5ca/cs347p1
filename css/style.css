@@ -103,21 +103,11 @@ p {
     font-size: 2em;
     font-weight: 600;
 }
-
-#dark-choco {
+.chocolate {
     width: 250px;
     height: 250px;
 }
 
-#white-choco {
-    width: 250px;
-    height: 250px;
-}
-
-#milk-choco {
-    width: 250px;
-    height: 250px;
-}
 
 #map {
     padding-left: 1em;
